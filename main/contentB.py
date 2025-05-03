@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import linear_kernel
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import stopwords
 
-filtered_restaurant_df = pd.read_csv('C:/Users/omben/Desktop/Projects/Restaurant-Recommender-System/main/restaurants.csv')
+filtered_restaurant_df = pd.read_csv('C:/xampp/htdocs/Python_Projects/Restaurant-Recommender-System/main/restaurants.csv')
 
 price_map = {
     'low':('everybody', 'no-expense', 'accomodating', 'inexpensive', 'cheap', 'ample', 'rock-bottom'),

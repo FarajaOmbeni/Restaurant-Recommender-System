@@ -10,7 +10,7 @@ from flask_admin import Admin
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hello'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:faraja@localhost/rrs'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/rrs'
 admin = Admin(app, name='Control Panel')
 app.config.from_pyfile('../config.cfg')
 db = SQLAlchemy(app)
@@ -23,7 +23,7 @@ app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_USERNAME'] = 'ombenifaraja@gmail.com'
-app.config['MAIL_PASSWORD'] = 'qokdawokmxsyvxgx'
+app.config['MAIL_PASSWORD'] = 'vqmixozwwtsuoeiv'
 mail = Mail(app)
 
 

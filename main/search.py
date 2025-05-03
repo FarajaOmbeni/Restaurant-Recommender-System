@@ -2,7 +2,7 @@
 import pandas as pd
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
-filtered_restaurant_df = pd.read_csv('C:/Users/omben/Desktop/Projects/Restaurant-Recommender-System/main/restaurants.csv')
+filtered_restaurant_df = pd.read_csv('C:/xampp/htdocs/Python_Projects/Restaurant-Recommender-System/main/restaurants.csv')
 
 vectorizer = TfidfVectorizer(ngram_range=(1,2))
 corpus = filtered_restaurant_df['name']+' '+filtered_restaurant_df['cuisine']
